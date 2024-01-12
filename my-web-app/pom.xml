@@ -8,6 +8,8 @@
     <artifactId>my-web-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>war</packaging> <!-- Change packaging type to "war" -->
+
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -24,6 +26,7 @@
 
     <build>
         <plugins>
+            <!-- Change the maven-compiler-plugin configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -33,6 +36,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <!-- Add the maven-war-plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
